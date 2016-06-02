@@ -30,4 +30,7 @@ cask 'racket' do
   binary "#{appdir}/Racket v#{version}/bin/slatex"
   binary "#{appdir}/Racket v#{version}/bin/slideshow"
   binary "#{appdir}/Racket v#{version}/bin/swindle"
+
+  zap delete: ["~/Library/Preferences/org.racket-lang.DrRacket.plist",
+               "~/Library/Saved Application State/org.racket-lang.DrRacket.savedState"]
 end
