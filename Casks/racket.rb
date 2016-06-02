@@ -32,5 +32,8 @@ cask 'racket' do
   binary "#{appdir}/Racket v#{version}/bin/swindle"
 
   zap delete: ["~/Library/Preferences/org.racket-lang.DrRacket.plist",
-               "~/Library/Saved Application State/org.racket-lang.DrRacket.savedState"]
+               "~/Library/Saved Application State/org.racket-lang.DrRacket.savedState",
+               "~/Library/Application Support/CrashReporter/DrRacket_*.plist",
+               "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.racket-lang.drracket.sfl",
+               "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.racket-lang.racket documentation.sfl"]
 end
