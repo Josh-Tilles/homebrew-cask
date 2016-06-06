@@ -15,4 +15,9 @@ cask 'anki' do
   depends_on arch: :intel
 
   app 'Anki.app'
+
+  zap delete: ['~/Library/Preferences/net.ichi2.anki.plist',
+               '~/Library/Application Support/CrashReporter/Anki_*.plist',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.ichi2.anki.sfl',
+               '~/Library/Saved Application State/net.ichi2.anki.savedState']
 end
